@@ -1,4 +1,4 @@
-def right_version = "17.+"; //version from Appodeal plugin
+def right_version = "16.+"; //version from Appodeal plugin
 configurations.all{
 	dependencies.all{ Dependency d ->
 		def right_version_copy = right_version
@@ -26,9 +26,9 @@ dependencies {
 	implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
     
 	// Google Play Services
-    implementation 'com.google.android.gms:play-services-ads:17.+'
-    implementation 'com.google.android.gms:play-services-location:17.+'
-    implementation 'com.google.android.gms:play-services-gcm:17.+'
+    implementation 'com.google.android.gms:play-services-ads:16.+'
+    implementation 'com.google.android.gms:play-services-location:16.+'
+    implementation 'com.google.android.gms:play-services-gcm:16.+'
 
 	// For myTarget SDK
 	implementation 'com.google.android.exoplayer:exoplayer-core:2.8.4'
